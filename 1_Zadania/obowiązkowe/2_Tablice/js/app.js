@@ -31,3 +31,42 @@ function myFavoriteFruits() {
 }
 
 myFavoriteFruits();
+
+// Zadanie 3
+
+function printTable(array) {
+    for (i of array) {
+        console.log(i);
+    }
+}
+
+printTable([1,2,3,4]);
+
+// Zadanie 4
+
+function multiply(array) {
+    let v = 1;
+    for (let i of array) {
+        v *= i;
+    }
+    return v;
+}
+
+// Zadanie 5
+
+function getEvenAvarage(array) {
+    const even = [];
+    let sum = 0;
+    let found = 0;
+    for (let i of array) {
+        if (i%2 == 0) {
+            sum += i;
+            found++;
+        }
+    }
+    if (found == 0) return null;
+    else return sum / found;
+} 
+
+getEvenAvarage([1,2,3,4,5,6,7]);
+getEvenAvarage([1,1,1,1,1]);
