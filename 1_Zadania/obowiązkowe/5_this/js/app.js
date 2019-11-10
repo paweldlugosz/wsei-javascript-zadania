@@ -38,3 +38,24 @@ car.getList = function() {
 
 car.appednDate('2019:10:10');
 console.log(car.getList());
+
+// Zadanie 3
+
+let stairs = {
+    step: 0,
+    up: function() {
+        this.step++;
+    },
+    down: function() {
+        this.step--;
+    },
+    printStep: function() {
+        return this.step;
+    }
+}
+
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down(); 
+stairs.printStep() // 2
