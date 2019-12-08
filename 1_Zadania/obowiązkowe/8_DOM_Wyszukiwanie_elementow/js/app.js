@@ -1,23 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Zad 0
-    let elemClass = document.getElementsByClassName('title')[0];
+    /*
+    Poniżej napisz kod rozwiązujący zadania. Odpowiedzi oddzielaj komentarzami.
+     */
 
-    function getDataAnimation(element) {
-        let newVariable = element.getAttribute('data-animation');
-        return newVariable;
-    }
+     // Zadanie 0
+     let element = document.querySelector('.title');
+     function getDataAnimation(element) {
+         let variable = element.getAttribute('data-animation');
+         return variable;
+     }
 
-    console.log(getDataAnimation(elemClass));
+     getDataAnimation(element);
 
-    // Zad 1
-    let el1 = document.getElementById('home');
-    let el2 = document.querySelector('#home');
-    let el3 = document.querySelector('li[data-direction]');
-    let elClassBlock = document.querySelector('.block');
+     // Zadanie 1
+     let home = document.querySelector('#home');
+     console.log(home);
+     let home2 = document.getElementById('#home');
+     console.log(home2);
+     let firstLi = document.querySelector('li[data-direction]');
+     console.log(firstLi);
+     let firstBlock = document.querySelector('.block');
+     console.log(firstBlock);
 
-    // Zad 2
+     // Zadanie 2
+     let liElements = document.querySelectorAll('nav li');
+     console.log(liElements);
+     let paragrafElements = document.querySelectorAll('div p');
+     console.log(paragrafElements);
+     let divElements = document.querySelectorAll('article div');
+     console.log(divElements);
 
-    let el4 = document.querySelector('nav li');
-    let el5 = document.querySelector('div p');
-    let el6 = document.querySelector('article div');
+     // Zadanie 3
+     let articleFirst = document.querySelector('article.first');
+     console.log(articleFirst);
+     let howManyElements = document.querySelectorAll('h1').length;
+     console.log(howManyElements);
+
 });
